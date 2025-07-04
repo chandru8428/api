@@ -9,7 +9,8 @@ container.innerHTML = "<p>⏳ Loading countries...</p>";
 // Fetch all countries from API
 async function fetchCountries() {
   try {
-    const res = await fetch("https://restcountries.com/v3.1/all");
+  const res = await fetch("https://restcountries.com/v3.1/all");
+
 
     if (!res.ok) throw new Error("Network response was not ok");
 
